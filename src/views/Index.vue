@@ -1,9 +1,14 @@
 <template>
-  <v-app></v-app>
+  <v-app>
+    <core-app-bar />
+  </v-app>
 </template>
 
 <script>
 export default {
-  name: "Index"
+  name: "Index",
+  components: {
+    CoreAppBar: () => import("@/components/core/AppBar")
+  }
 };
 </script>
