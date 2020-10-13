@@ -1,6 +1,7 @@
 <template>
   <v-app>
     <core-app-bar />
+    <core-drawer />
   </v-app>
 </template>
 
@@ -8,7 +9,8 @@
 export default {
   name: "Index",
   components: {
-    CoreAppBar: () => import("@/components/core/AppBar")
+    CoreAppBar: () => import("@/components/core/AppBar"),
+    CoreDrawer: () => import("@/components/core/Drawer")
   }
 };
 </script>
