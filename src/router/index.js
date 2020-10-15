@@ -13,6 +13,32 @@ const routes = [
         name: "Dashboard",
         path: "",
         component: () => import("@/views/Dashboard")
+      },
+      // Pages
+      {
+        name: "User List",
+        path: "pages/user",
+        component: () => import("@/views/pages/UserList")
+      },
+      {
+        name: "Project List",
+        path: "pages/project",
+        component: () => import("@/views/pages/ProjectList")
+      },
+      {
+        name: "Component List",
+        path: "pages/component",
+        component: () => import("@/views/pages/ComponentList")
+      },
+      {
+        name: "Question List",
+        path: "pages/qna",
+        component: () => import("@/views/pages/QuestionList")
+      },
+      {
+        name: "Cooperation List",
+        path: "pages/cooperation",
+        component: () => import("@/views/pages/CooperationList")
       }
     ]
   }
